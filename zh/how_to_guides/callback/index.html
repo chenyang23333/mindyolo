@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://mindspore-lab.github.io/mindyolo/zh/tutorials/modelarts/">
+        <link rel="canonical" href="https://mindspore-lab.github.io/mindyolo/zh/how_to_guides/callback/">
       
       
-        <link rel="prev" href="../finetune/">
+        <link rel="prev" href="../write_a_new_model/">
       
       
-        <link rel="next" href="../deployment/">
+        <link rel="next" href="../../reference/data/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.21">
     
     
       
-        <title>云上启动 - MindYOLO Docs</title>
+        <title>回调函数用法 - MindYOLO Docs</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#mindyolo" class="md-skip">
           跳转至
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              云上启动
+              回调函数用法
             
           </span>
         </div>
@@ -152,7 +152,7 @@
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="../../../tutorials/modelarts/" hreflang="en" class="md-select__link">
+                  <a href="../../../how_to_guides/callback/" hreflang="en" class="md-select__link">
                     English
                   </a>
                 </li>
@@ -262,15 +262,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../quick_start/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../tutorials/quick_start/" class="md-tabs__link">
         教程
       </a>
     </li>
@@ -280,13 +278,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../how_to_guides/data_preparation/" class="md-tabs__link">
+      <a href="../data_preparation/" class="md-tabs__link md-tabs__link--active">
         开发者指导
       </a>
     </li>
@@ -405,16 +405,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
       
       
         
@@ -437,7 +435,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           教程
@@ -450,7 +448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../quick_start/" class="md-nav__link">
+      <a href="../../tutorials/quick_start/" class="md-nav__link">
         快速开始
       </a>
     </li>
@@ -464,7 +462,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../configuration/" class="md-nav__link">
+      <a href="../../tutorials/configuration/" class="md-nav__link">
         配置
       </a>
     </li>
@@ -478,7 +476,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../data_augmentation/" class="md-nav__link">
+      <a href="../../tutorials/data_augmentation/" class="md-nav__link">
         数据增强
       </a>
     </li>
@@ -492,8 +490,109 @@
   
   
     <li class="md-nav__item">
-      <a href="../finetune/" class="md-nav__link">
+      <a href="../../tutorials/finetune/" class="md-nav__link">
         微调
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/modelarts/" class="md-nav__link">
+        云上启动
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/deployment/" class="md-nav__link">
+        部署
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          开发者指导
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          开发者指导
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_preparation/" class="md-nav__link">
+        数据准备
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../write_a_new_model/" class="md-nav__link">
+        自定义模型
       </a>
     </li>
   
@@ -515,188 +614,10 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          云上启动
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
-        云上启动
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#mindyolo" class="md-nav__link">
-    MindYOLO 云上训练快速入门
-  </a>
-  
-    <nav class="md-nav" aria-label="MindYOLO 云上训练快速入门">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    迁移外部项目
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    准备数据集
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    准备预训练模型(可选)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    新建训练任务
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    修改已有训练任务
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    状态查看
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../deployment/" class="md-nav__link">
-        部署
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
-      
-      
-        
-          
-        
-          
-        
-          
-        
-      
-      
-        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-          开发者指导
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
-          开发者指导
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../how_to_guides/data_preparation/" class="md-nav__link">
-        数据准备
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../how_to_guides/write_a_new_model/" class="md-nav__link">
-        自定义模型
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../how_to_guides/callback/" class="md-nav__link">
         回调函数用法
       </a>
+      
     </li>
   
 
@@ -898,69 +819,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#mindyolo" class="md-nav__link">
-    MindYOLO 云上训练快速入门
-  </a>
-  
-    <nav class="md-nav" aria-label="MindYOLO 云上训练快速入门">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    迁移外部项目
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    准备数据集
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    准备预训练模型(可选)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    新建训练任务
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    修改已有训练任务
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    状态查看
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -974,7 +832,7 @@
                   
 
   
-    <a href="https://github.com/mindspore-lab/mindyolo/edit/master/docs/zh/tutorials/modelarts.md" title="编辑此页" class="md-content__button md-icon">
+    <a href="https://github.com/mindspore-lab/mindyolo/edit/master/docs/zh/how_to_guides/callback.md" title="编辑此页" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -983,94 +841,49 @@
     
       
     
-    <a href="https://github.com/mindspore-lab/mindyolo/raw/master/docs/zh/tutorials/modelarts.md" title="查看本页的源代码" class="md-content__button md-icon">
+    <a href="https://github.com/mindspore-lab/mindyolo/raw/master/docs/zh/how_to_guides/callback.md" title="查看本页的源代码" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-<h1 id="_1">云上启动<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<!-- BEGIN INCLUDE ../../../tutorials/modelarts_CN.md -->
-<h2 id="mindyolo">MindYOLO 云上训练快速入门<a class="headerlink" href="#mindyolo" title="Permanent link">&para;</a></h2>
-<p>本文主要介绍MindYOLO借助OPENI<a href="https://openi.pcl.ac.cn/">启智</a>平台的训练方法。</p>
-<h3 id="_2">迁移外部项目<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
-<p>点击启智平台主页面右上角的加号，从下拉菜单中选择迁移外部项目，将MindYOLO从github迁移至启智平台。</p>
-<div align=center>
-<img width='600' src="https://github.com/yuedongli1/images/raw/master/1.png"/>
-</div>
-<p>输入MindYOLO的URL即可进行迁移。</p>
-<div align=center>
-<img width='600' src="https://github.com/yuedongli1/images/raw/master/2.png"/>
-</div>
+<h1 id="mindyolo">MindYOLO回调函数用法<a class="headerlink" href="#mindyolo" title="Permanent link">&para;</a></h1>
+<p><strong>回调函数</strong>：当程序运行到某个挂载点时，会自动调用在运行时注册到该挂载点的所有方法。
+通过回调函数的形式可以增加程序的灵活性和扩展性，因为用户可以将自定义方法注册到要调用的挂载点，而无需修改程序中的代码。</p>
+<p>在MindYOLO中，回调函数具体实现在mindyolo/utils/callback.py文件中。
+<div class="highlight"><pre><span></span><code><span class="c1">#mindyolo/utils/callback.py</span>
+<span class="nd">@CALLBACK_REGISTRY</span><span class="o">.</span><span class="n">registry_module</span><span class="p">()</span>
+<span class="k">class</span> <span class="nc">callback_class_name</span><span class="p">(</span><span class="n">BaseCallback</span><span class="p">):</span>
 
-<h3 id="_3">准备数据集<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<p>可以上传自己的数据集，也可以关联平台已有的数据集。</p>
-<div align=center>
-<img width='600' src="https://github.com/yuedongli1/images/raw/master/3.png"/>
-</div>
-<p>上传个人数据集需将可用集群选择为NPU.</p>
-<div align=center>
-<img width='600' src="https://github.com/yuedongli1/images/raw/master/4.png"/>
-</div>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="o">...</span>
+    <span class="k">def</span> <span class="nf">callback_fn_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">run_context</span><span class="p">:</span> <span class="n">RunContext</span><span class="p">):</span>
+        <span class="k">pass</span>
+</code></pre></div></p>
+<p>通过模型的yaml文件callback字段下添加一个字典列表来实现调用
+<div class="highlight"><pre><span></span><code><span class="c1">#回调函数配置字典：</span>
+<span class="nt">callback</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> name</span><span class="p">:</span><span class="w"> </span><span class="nv">callback_class_name</span><span class="p p-Indicator">,</span><span class="nt"> args</span><span class="p">:</span><span class="w"> </span><span class="nv">xx</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> name</span><span class="p">:</span><span class="w"> </span><span class="nv">callback_class_name2</span><span class="p p-Indicator">,</span><span class="nt"> args</span><span class="p">:</span><span class="w"> </span><span class="nv">xx</span><span class="w"> </span><span class="p p-Indicator">}</span>
+</code></pre></div>
+例如以YOLOX为示例：</p>
+<p>在mindyolo/utils/callback.py文件YoloxSwitchTrain类中on_train_step_begin方法里面添加逻辑，打印“train step begin”的日志
+<div class="highlight"><pre><span></span><code><span class="nd">@CALLBACK_REGISTRY</span><span class="o">.</span><span class="n">registry_module</span><span class="p">()</span>
+<span class="k">class</span> <span class="nc">YoloxSwitchTrain</span><span class="p">(</span><span class="n">BaseCallback</span><span class="p">):</span>
 
-<h3 id="_4">准备预训练模型(可选)<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<p>如需加载预训练权重，可在模型选项卡中添加。</p>
-<div align=center>
-<img width='600' src="https://github.com/yuedongli1/images/raw/master/5.png"/>
-</div>
-<p>导入本地模型时，模型框架续为MindSpore.</p>
-<div align=center>
-<img width='600' src="https://github.com/yuedongli1/images/raw/master/6.png"/>
-</div>
-
-<h3 id="_5">新建训练任务<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
-<p>在云脑选项卡中选择训练任务-&gt;新建训练任务。</p>
-<div align=center>
-<img width='600' src="https://github.com/yuedongli1/images/raw/master/7.png"/>
-</div>
-<p>基本信息中的计算资源选择为Ascend NPU.</p>
-<div align=center>
-<img width='600' src="https://github.com/yuedongli1/images/raw/master/8.png"/>
-</div>
-<p>设置参数并添加运行参数。</p>
-<div align=center>
-<img width='600' src="https://github.com/yuedongli1/images/raw/master/12.png"/>
-</div>
-
-<ul>
-<li>如需加载预训练权重，可在选择模型中选择已上传的模型文件，并在运行参数中增加ckpt_dir参数，参数值为/cache/*.ckpt，*为实际的文件名</li>
-<li>AI引擎中需选择MindSpore-1.8.1-aarch64，启动文件为train.py</li>
-<li>运行参数需添加enable_modelarts，值为True</li>
-<li>运行参数中由config参数指定具体的模型算法，参数值前缀为/home/work/user-job-dir/运行版本号，新建训练任务的运行版本号通常为V0001</li>
-</ul>
-<p>在分布式训练场景下，需在规格中选好卡数，并在运行参数中增加is_parallel参数，值为True</p>
-<div align=center>
-<img width='600' src="https://github.com/yuedongli1/images/raw/master/13.png"/>
-</div>
-
-<h3 id="_6">修改已有训练任务<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
-<p>点击已有训练任务的修改按钮，可以基于已有训练任务进行参数修改并运行新的训练任务。</p>
-<div align=center>
-<img width='600' src="https://github.com/yuedongli1/images/raw/master/14.png"/>
-</div>
-
-<p>注意：运行版本号=所基于版本号+1</p>
-<div align=center>
-<img width='600' src="https://github.com/yuedongli1/images/raw/master/15.png"/>
-</div>
-
-<h3 id="_7">状态查看<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
-<p>点击相应的任务名称，即可查看配置信息、日志、资源占用情况，进行结果下载。</p>
-<div align=center>
-<img width='600' src="https://github.com/yuedongli1/images/raw/master/10.png"/>
-</div>
-
-<div align=center>
-<img width='600' src="https://github.com/yuedongli1/images/raw/master/11.png"/>
-</div>
-
-<!-- END INCLUDE -->
+    <span class="k">def</span> <span class="nf">on_train_step_begin</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">run_context</span><span class="p">:</span> <span class="n">RunContext</span><span class="p">):</span>
+         <span class="c1"># 自定义逻辑</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;train step begin&quot;</span><span class="p">)</span>
+        <span class="k">pass</span>
+</code></pre></div>
+YOLOX对应的yaml文件configs/yolox/hyp.scratch.yaml的callback字段下添加该回调函数
+<div class="highlight"><pre><span></span><code><span class="nt">callback</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> name</span><span class="p">:</span><span class="w"> </span><span class="nv">YoloxSwitchTrain</span><span class="p p-Indicator">,</span><span class="nt"> switch_epoch_num</span><span class="p">:</span><span class="w"> </span><span class="nv">285</span><span class="w"> </span><span class="p p-Indicator">}</span>
+</code></pre></div>
+则每个训练step执行前都会执行logger.info("train step begin")语句。</p>
+<p>借助回调函数，用户可以自定义某个挂载点需要执行的逻辑，而无需理解完整的训练流程的代码。</p>
 
 
 
@@ -1099,7 +912,7 @@
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../finetune/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 微调" rel="prev">
+          <a href="../write_a_new_model/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 自定义模型" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -1108,20 +921,20 @@
                 上一页
               </span>
               <div class="md-ellipsis">
-                微调
+                自定义模型
               </div>
             </div>
           </a>
         
         
           
-          <a href="../deployment/" class="md-footer__link md-footer__link--next" aria-label="下一页: 部署" rel="next">
+          <a href="../../reference/data/" class="md-footer__link md-footer__link--next" aria-label="下一页: data" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                部署
+                data
               </div>
             </div>
             <div class="md-footer__button md-icon">
