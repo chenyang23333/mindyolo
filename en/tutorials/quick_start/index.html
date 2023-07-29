@@ -17,7 +17,7 @@
         <link rel="next" href="../configuration/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.19">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.21">
     
     
       
@@ -430,8 +430,6 @@
         
           
         
-          
-        
       
       
         <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -569,20 +567,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../train_process/" class="md-nav__link">
-        Training
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../finetune/" class="md-nav__link">
         Finetune
       </a>
@@ -646,8 +630,6 @@
         
           
         
-          
-        
       
       
         <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -670,20 +652,6 @@
     <li class="md-nav__item">
       <a href="../../how_to_guides/data_preparation/" class="md-nav__link">
         Data Preparation
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../how_to_guides/augmentation_custom/" class="md-nav__link">
-        Augmentation(custom)
       </a>
     </li>
   
@@ -1035,11 +1003,14 @@ to understand their behavior. Some common arguments are:
 </code></pre></div></p>
 </li>
 <li>
-<p>To evaluate a model's performance:
+<p>To evaluate a model's performance on 1 NPU/GPU/CPU:
   <div class="highlight"><pre><span></span><code>python test.py --config ./configs/yolov7/yolov7.yaml --weight /path_to_ckpt/WEIGHT.ckpt
-</code></pre></div>
-<em>Notes: (1) The default hyper-parameter is used for 8-card training, and some parameters need to be adjusted in the case of a single card. (2) The default device is Ascend, and you can modify it by specifying 'device_target' as Ascend/GPU/CPU, as these are currently supported.</em></p>
+</code></pre></div></p>
 </li>
+<li>To evaluate a model's performance 8 NPUs/GPUs:
+  <div class="highlight"><pre><span></span><code>mpirun --allow-run-as-root -n 8 python test.py --config ./configs/yolov7/yolov7.yaml --weight /path_to_ckpt/WEIGHT.ckpt --is_parallel True  ```
+</code></pre></div>
+<em>Notes: (1) The default hyper-parameter is used for 8-card training, and some parameters need to be adjusted in the case of a single card. (2) The default device is Ascend, and you can modify it by specifying 'device_target' as Ascend/GPU/CPU, as these are currently supported.</em></li>
 <li>For more options, see <code>train/test.py -h</code>.</li>
 </ul>
 <h3 id="deployment">Deployment<a class="headerlink" href="#deployment" title="Permanent link">&para;</a></h3>
